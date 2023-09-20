@@ -1,0 +1,105 @@
+
+
+.Home {
+    background: url(../../assets/banner.jpg);
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.HeaderContainer {
+    width: auto;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+.HeaderContainer h1 {
+    font-size: 65px;
+    height: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.HeaderContainer p {
+    font-size: 35px;
+    color: brown;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.HeaderContainer button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 130px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.HeaderContainer button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: rgba(236, 89, 89, 0.5);
+    transition: .4s;
+    z-index: -1;
+}
+
+.HeaderContainer button:hover:before {
+
+    width: 100%;
+
+}
+@media  (max-width:768px) {
+    
+
+.HeaderContainer h1 {
+    font-size: 25px;
+    height: 10px;
+}
+
+.HeaderContainer p {
+    font-size: 20px;
+
+}
+
+.HeaderContainer button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 70px;
+    font-size: 10px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.HeaderContainer button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: rgba(236, 89, 89, 0.5);
+    transition: .4s;
+    z-index: -1;
+}
+    
+}

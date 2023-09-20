@@ -1,0 +1,76 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+    background-color: cadetblue;
+}
+
+.Navbar-Left img {
+    border-radius: 50%;
+}
+
+.Navbar-Right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Navbar-Right a {
+    color: white;
+    font-size: 22px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+}
+
+.Navbar-Right a::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(236, 89, 89, 0.5);
+    transition: .4s;
+}
+
+.Navbar-Right a:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .Navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Navbar-Left img {
+        width: 75px;
+        height: 75px;
+    }
+    
+
+    .Navbar-Right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .Navbar-Right a {
+        color: white;
+        font-size: 16px;
+        background-color: black;
+        padding: 3px 8px;
+        border-radius: 4px;
+        transition: .3s;
+        position: relative;
+        z-index: 1;
+        font-weight: 800;
+    }
+
+}
